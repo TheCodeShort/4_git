@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"549a056814302353","x":-1106,"y":-210,"width":250,"height":60,"type":"text","text":""},
+		{"id":"62afdb4debe35ea1","type":"text","text":"Estos son ejecutados en la terminal bash que en Windows se descarga y en linux ubuntu ya esta por que es la propia terminal de linux ","x":-1100,"y":-620,"width":325,"height":120,"color":"2"},
+		{"id":"86f52437dcf169f9","type":"text","text":"Git :FabGit:","x":-986,"y":-780,"width":98,"height":50,"color":"1"},
+		{"id":"ef0951612e5e1360","x":-1000,"y":-440,"width":125,"height":50,"color":"2","type":"text","text":"Comandos"}
+	],
+	"edges":[
+		{"id":"6be6427fe596e18f","fromNode":"86f52437dcf169f9","fromSide":"bottom","toNode":"62afdb4debe35ea1","toSide":"top"},
+		{"id":"1df1a4d5e6c525ed","fromNode":"62afdb4debe35ea1","fromSide":"bottom","toNode":"ef0951612e5e1360","toSide":"top"}
+	]
+}
