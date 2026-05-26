@@ -61,3 +61,20 @@ Sirve para: Cambiarle el nombre a un archivo o moverlo a otra carpeta, y que Git
 
 - **Cómo se conecta con otros:** Se enlaza con **`git commit`**, porque mover el archivo es un cambio que debes guardar formalmente.
 - **Cuándo usarlo:** Sirve para casos donde escribiste mal el nombre de un archivo (como "indxe.html") y quieres corregirlo ("index.html") sin confundir a Git.
+
+---
+# nano .gitignore
+
+- **¿Qué hace?**: `nano` es un editor de texto que viene integrado en la terminal de Linux (como el Bloc de Notas de Windows, pero sin ventanas). `.gitignore` es el nombre del archivo.
+- **En la práctica**: Al ejecutarlo, tu terminal se convertirá en una pantalla negra para escribir. Solo debes escribir dentro la ruta `.obsidian/workspace.json`. Esto crea el archivo físicamente en la carpeta que me muestras.
+
+2. Guardar y salir en Nano (`Ctrl + O`, `Enter`, `Ctrl + X`)
+
+- **¿Qué hace?**: Como Nano no tiene botones de "Archivo -> Guardar", usas el teclado.
+    - `Ctrl + O` significa "Escribir el archivo" (Guardar).
+    - `Enter` confirma que mantienes el nombre `.gitignore`.
+    - `Ctrl + X` significa "Salir" para cerrar el editor y volver a tu terminal normal.
+
+# echo ".obsidian/workspace.json" >> .gitignore
+
+- es parecido a nano cambia es la manera en crear el archivo este es mas automático y nano se habré una ventana y toca poner comando para guardar 
