@@ -11,16 +11,13 @@
             "id": "82eb2c1f1a0f3984",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "3_archivos_canvas/1_git_para_principiantes.canvas",
-                "viewState": {
-                  "x": 249.5,
-                  "y": 386.4539877300611,
-                  "zoom": -1.613203804935403
-                }
+                "file": "2_archivos_markdown/1_git_para_principiantes.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
+              "icon": "lucide-file",
               "title": "1_git_para_principiantes"
             }
           }
@@ -191,9 +188,9 @@
   },
   "active": "82eb2c1f1a0f3984",
   "lastOpenFiles": [
+    "3_archivos_canvas/1_git_para_principiantes.canvas",
     "3_archivos_canvas/2_git_uso_frecuente.canvas",
     "3_archivos_canvas/3_git_menos_usados.canvas",
-    "3_archivos_canvas/1_git_para_principiantes.canvas",
     "2_archivos_markdown/3_git_menos_usados.md",
     "2_archivos_markdown/2_git_uso_frecuente.md",
     "2_archivos_markdown/1_git_para_principiantes.md",
