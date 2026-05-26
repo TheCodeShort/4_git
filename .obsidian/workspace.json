@@ -4,35 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "666bd1668dfe47d5",
+        "id": "e38862e16c8b7d9f",
         "type": "tabs",
         "children": [
           {
-            "id": "abbe68afefb5300f",
+            "id": "82eb2c1f1a0f3984",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "2_comandos.md",
-                "mode": "source",
-                "source": false
+                "file": "3_archivos_canvas/1_git_para_principiantes.canvas",
+                "viewState": {
+                  "x": 249.5,
+                  "y": 386.4539877300611,
+                  "zoom": -1.613203804935403
+                }
               },
-              "icon": "lucide-file",
-              "title": "2_comandos"
-            }
-          },
-          {
-            "id": "325b2c89638bc05d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2_comandos.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2_comandos"
+              "icon": "lucide-layout-dashboard",
+              "title": "1_git_para_principiantes"
             }
           }
         ]
@@ -200,10 +189,16 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "abbe68afefb5300f",
+  "active": "82eb2c1f1a0f3984",
   "lastOpenFiles": [
-    "1_comandos.canvas",
+    "3_archivos_canvas/2_git_uso_frecuente.canvas",
+    "3_archivos_canvas/3_git_menos_usados.canvas",
+    "3_archivos_canvas/1_git_para_principiantes.canvas",
+    "2_archivos_markdown/3_git_menos_usados.md",
+    "2_archivos_markdown/2_git_uso_frecuente.md",
+    "2_archivos_markdown/1_git_para_principiantes.md",
     "2_comandos.md",
+    "1_comandos.canvas",
     "1_pdf/progit.pdf",
     "1_comandos.md",
     "Bienvenido.md",
