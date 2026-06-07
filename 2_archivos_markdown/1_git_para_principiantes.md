@@ -22,6 +22,23 @@ Sirve para: Tomarle una "foto" o guardar permanentemente los archivos que había
 - **Cómo se conecta con otros:** Se enlaza con **`git push`**, porque después de guardar localmente varios "commits" (fotos), usas push para enviarlos todos a internet.
 - **Cuándo usarlo:** Sirve para casos donde terminaste de arreglar un error en el código y quieres guardar ese progreso para que no se pierda.
 
+### git commit --amend
+
+sirve exactamente para **editar el último commit** y evitar crear un segundo commit por un olvido.
+
+Modifica el **último commit** que hiciste en tu historial. En lugar de amontonar un nuevo commit que diga "arreglo de error" o "me faltó un archivo", este comando "abre" el último commit, le mete los nuevos cambios y lo vuelve a cerrar. El historial queda limpio, como si nunca te hubieras equivocado.
+
+- **Lo que hace:** Mete los archivos nuevos al último commit y **asume que quieres cambiar o mejorar el mensaje anterior**.
+- **El flujo:** Le das Enter y Git **congela la terminal**. Te abre una pantalla negra (un editor de texto) y te obliga a revisar el mensaje. No te dejará continuar trabajando hasta que guardes o cierres ese editor.
+### git commit --amend -m "nuevo mensaje"
+
+con este podemos aprovechar a editar el mensaje 
+
+### git commit --amend --no-edit
+
+_Agregar `--no-edit` sirve para que Git reutilice el mismo mensaje que ya tenía el commit anterior, ahorrándote el paso de abrir el editor de texto._
+- **Lo que hace:** Mete los archivos nuevos al último commit y **asume que el mensaje actual ya está bien**.
+- **El flujo:** Le das Enter, Git hace el cambio en un milisegundo y tú sigues trabajando. Nadie te interrumpe.
 ---
 
 ### **git push**
@@ -46,6 +63,24 @@ Sirve para: Crear un repositorio nuevo desde cero en tu computadora, convirtiend
 - **Cómo se conecta con otros:** Se enlaza con **`git add`**, porque después de inicializar la carpeta (init), empiezas a añadir (add) los archivos que quieres guardar.
 - **Cuándo usarlo:** Sirve para casos donde empiezas un proyecto totalmente nuevo en tu computadora y quieres que Git comience a llevar el registro desde el día uno.
 
+### git remote add url
+
+- **`git remote add`**: Le dice a Git que vas a gestionar los servidores remotos (la nube) que están vinculados a tu carpeta local.
+
+- `url` aca no va la palabra url sino el link tener presente que el link puede ser HTTPS o SSH esto cambia  
+
+
+### git remote set-url origin git@github.com:TheCodeShort/nombre-de-tu-repositorio.git
+
+- si el link que se copio para el repo no es o nos equivocamos se puede cambiar de esa manera tener presente que se puede cambiar a HTTPS o SSH los link o url cambian 
+
+- **`git remote`**: Le dice a Git que vas a gestionar los servidores remotos (la nube) que están vinculados a tu carpeta local.
+- **`set-url origin`**: Le ordena a Git: _"Borra la dirección de internet que tenías guardada bajo el nombre 'origin' y reemplázala por una nueva"_. (`origin` es simplemente el nombre estándar que Git le da a tu repositorio principal en la nube).
+- **`git@github.com:...`**: Es la nueva dirección, pero ahora con el formato **SSH** que utiliza tus llaves de seguridad en lugar de contraseñas.
+
+
+### git remote -v
+- con esto podemos ver los link que están vinculados al repositorio y ver si es SSH o HTTPS 
 ---
 
 ### **git rm**
