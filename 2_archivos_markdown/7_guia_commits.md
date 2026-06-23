@@ -71,7 +71,7 @@ La página oficial dice que puedes usar otros nombres si tu equipo quiere. Estos
     Usa el código con precaución.
     
 
-5. `chore:` Tarea hogareña o rutina (Tareas rutinarias / Mantenimiento)
+5. `chore:` Tarea hogareña o rutina (Tareas rutinarias / Mantenimiento) ^8dcf15
 
 - **¿Cuándo se usa?**: Para tareas de limpieza que no cambian el código del negocio ni arreglan bugs. Por ejemplo, instalar una librería, configurar herramientas o actualizar dependencias.
 - **Ejemplo en terminal**:

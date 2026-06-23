@@ -7,8 +7,11 @@
 
 # git rm --cached .obsidian/workspace.json
 
-- **¿Qué hace?**: `git rm` significa remover/borrar para Git. La bandera `--cached` es la clave aquí: le dice a Git que **borre el archivo de su memoria/historial de seguimiento, pero NO de tu computadora**.
+- **¿Qué hace?**: `git rm` significa remover/borrar para Git. La bandera `--cached` es la clave aquí: le dice a Git que **borre el archivo de su memoria/historial de seguimiento, pero NO de tu computadora** sino de GitHub.
+
 - **En la práctica**: Tu archivo seguirá existiendo en tu PC para que Obsidian funcione bien, pero Git dejará de vigilar si cambia o no.
+
+- Despues de dejar o borrar de GitHub la carpeta que no se necesita hay que guardar los cambios con un commit y no olvidar [[7_guia_commits#^8dcf15]]
 
 
 # git checkout --theirs .obsidian/workspace.jso`
