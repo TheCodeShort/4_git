@@ -78,7 +78,7 @@ La página oficial dice que puedes usar otros nombres si tu equipo quiere. Estos
     
     bash
     
-    ```
+    ```git 
     git commit -m "chore: instalar la librería axios para peticiones web"
     ```
     
@@ -92,7 +92,7 @@ La página oficial dice que puedes usar otros nombres si tu equipo quiere. Estos
     
     bash
     
-    ```
+    ```git 
     git commit -m "test: agregar prueba para validar el formulario de registro"
     ```
     
@@ -106,7 +106,7 @@ La página oficial dice que puedes usar otros nombres si tu equipo quiere. Estos
     
     bash
     
-    ```
+    ```git 
     git commit -m "refactor: simplificar la función que calcula los precios del carrito"
     ```
     
@@ -120,6 +120,6 @@ La página oficial dice que puedes usar otros nombres si tu equipo quiere. Estos
     
     bash
     
-    ```
+    ```git 
     git commit -m "style: corregir indentación y eliminar espacios en blanco dobles"
     ```

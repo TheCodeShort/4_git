@@ -6,17 +6,27 @@
 - Ahí verás un correo con el formato `ID+username@://github.com`. Copia esa dirección.
 
 
-# **`git config --global user.email "..."`**
+# git config --global user.email "..."
  Le dice a Git qué correo electrónico debe estampar en cada cambio que hagas . Al usar el correo anónimo de GitHub, proteges tu cuenta real de spammers que recolectan correos de repositorios públicos.
-# **`git config --global user.name "..."`**
+# git config --global user.name "..."
 Define el nombre visible que aparecerá junto a tus cambios.
 
-# `git config --list` 
+
+# git config --global --unset user.mail
+
+si se confunden o ponen algo mal se puede borrar 
+
+El parámetro `--unset` le dice a Git: _"Busca la propiedad que te voy a indicar a continuación y bórrala por completo del registro global"_.
+# git config --list 
 
 Esto te mostrará una lista con tu nombre, correo y otras preferencias activas.
 
+# git config --global --list
 
-# `ssh-keygen -t ed25519 -C "165424154+TheCodeShort@://github.com"`
+Esto te mostrará una lista con tu nombre, correo activas.
+
+
+# ssh-keygen -t ed25519 -C "165424154+TheCodeShort@://github.com"
 
 - con esto creamos nuestra llave criptografica esto nos ayuda a tener seguridad y se usa cuando se creo un repo y el link es en SSH 
 
@@ -33,7 +43,13 @@ Esto te mostrará una lista con tu nombre, correo y otras preferencias activas.
 - nos dirigimos a la ruta que nos creo en el paso anterior que en linux es /hom/name_user/ssh y buscamos la carpeta ssh y hay una llamada asi id_ed25519.pub  puede variar un poco pero es el mismo formato aca se encuentra la llave que empieza con  ssh
 
 
-# `ssh -T git@github.com`
+# ssh -T git@github.com
 
 - con esto podemos probar la conexion a git hub, preguntara si queremos hacer la conexion se escribe que yes despues ENTER y saldra  `Hi TheCodeShort! You've successfully authenticated, but GitHub does not provide shell access.
-`
+
+- git@github.com es parte del comando no otro correo 
+	
+	- **`git`**: Es el usuario universal que usa GitHub para recibir todas las conexiones SSH del mundo.
+	- **`github.com`**: Es el servidor real (el host) al que tu computadora necesita conectarse. Al poner tu correo de `users.noreply`, el sistema intentó buscar una página web con ese nombre de correo completo y por eso te arrojó el error de que no pudo resolver el _hostname_.
+
+---
