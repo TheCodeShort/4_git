@@ -79,7 +79,41 @@ nos sirve para revertir cambios  o borrarlo no olvidar que con git log -- onelin
 
 ### **git log --oneline**
 
-- Es para que salga el código de cada commit, git no entiende por nombres guardados sino por código saldrá algo así `a1b2c3d nombre del commit`
+Es para que salga el código de cada commit, git no entiende por nombres guardados sino por código saldrá algo así `a1b2c3d nombre del commit`
+
+Si tienes decenas de commits, el nivel básico te llenará la pantalla de texto. Con este modificador reduces cada commit a **una sola línea**
+
+**Qué verás:** Una lista super limpia con los primeros 7 caracteres del ID del commit (**Hash** o **SHA-1 corto**) y el título del mensaje. Ideal para ver qué se hizo en los últimos días de un solo golpe de vista.
+
+### git log --oneline --graph
+
+Cuando trabajas con más personas, las ramas se mezclan y se separan. Este comando dibuja un "árbol" con líneas de texto en la terminal para que entiendas de dónde salió cada cambio
+
+**Qué verás:** Asteriscos `*` y líneas de colores que representan visualmente las fusiones (_merges_) y divisiones del proyecto.
+
+### git log -p
+
+¿Quieres ver el historial pero además saber **qué líneas de código exactas se añadieron o borraron** en cada commit? Añade el modificador `-p`
+
+- **Qué verás:** Las líneas con un signo **`+` en verde** son las que se agregaron, y las líneas con un signo **`-` en rojo** son las que se eliminaron.
+- _Truco:_ Si solo quieres ver los últimos 3 commits con este nivel de detalle, limita la búsqueda agregando un número: `git log -p -3`.
+
+### git log --oneline --graph --date=short --pretty=format:"%C(yellow)%h%Creset %C(magenta)%ad%Creset | %s %C(cyan)[%an]%Creset"
+
+Este es el comando definitivo. Te ordena todo de forma ultra legible, incluye las **fechas cortas (AAAA-MM-DD)**, te dice quién hizo el commit y dibuja el gráfico, todo en una sola línea por commit
+
+**Por qué es nivel pro:** Utiliza códigos de colores personalizados (`%C(...)`) y etiquetas de formato (`%h` para el ID, `%ad` para la fecha, `%an` para el autor) para transformar tu terminal en un panel de control profesional de Git.
+
+
+### git show {Codigo que muestra log}
+
+**Chismosear qué tiene dentro ese commit específico:**  
+Si quieres ver exactamente qué archivos se tocaron y qué líneas de código se cambiaron en _ese_ commit en particular
+
+### git diff {Codigo que muestra log}
+
+**Comparar tu código actual contra ese commit pasado:**  
+Si quieres ver qué diferencias hay entre lo que tienes guardado hoy en tu carpeta y lo que tenías en ese commit
 
 ### git switch --detach numero del commit => (a1b2c3d)
 

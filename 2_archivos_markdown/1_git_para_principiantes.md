@@ -1,4 +1,4 @@
-# Comandos Básicos (Día a Día)
+## 1_Comandos Básicos (Día a Día)
 
 ### **git status**
 Sirve para: Ver qué archivos has modificado, añadido o borrado, y que Git todavía no está guardando.
